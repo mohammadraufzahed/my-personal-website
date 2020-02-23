@@ -1,0 +1,36 @@
+@font-face {
+    font-family:'Sahel';
+    src: url(../fonts/Sahel.ttf);
+}
+body {
+    font-family: 'Sahel';
+    background-color:#dfe6e9;
+}
+.profile-picture img{
+    display: block;
+    border-radius: 100%;
+    height: 360px;
+    width:  360px;
+    border: solid 12px #2d3436;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.profile-picture h1{
+    text-align: center;
+    margin: auto;
+    
+}
+.des{
+    display: block;
+    vertical-align: middle;
+    border: solid #2d3436;
+    max-width: 100%;
+    width: 50%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.des p{
+    text-align: center;
+}
