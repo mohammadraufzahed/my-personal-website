@@ -31,7 +31,3 @@ jobs:
       run: |
         pip install pytest
         pytest
-      name: Run App
-      run:  |
-        python3 main.py
-
