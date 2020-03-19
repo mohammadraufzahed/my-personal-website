@@ -1,9 +1,9 @@
-@font-face {
-    font-family:'Sahel';
-    src: url(../fonts/Sahel.ttf);
+@font-face{
+    font-family: Lato;
+    src: url(../fonts/Lato-Bold.ttf);
 }
 body {
-    font-family: 'Sahel';
+    font-family: 'Lato';
     background-color:#dfe6e9;
 }
 .profile-picture img{
@@ -33,4 +33,7 @@ body {
 .des p{
     text-align: center;
     margin: 5px;
+}
+.h1 {
+    padding: 10px;
 }
