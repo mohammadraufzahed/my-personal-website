@@ -1,5 +1,11 @@
+@font-face{
+    font-family: Anton;
+    src: url(../fonts/Anton-Regular.ttf);
+}
 body{
-    background-color: #2d3436;
+    font-family: Anton;
+    background-color: #dfe6e9;
+    color: #2d3436;
 }
 .header{
     display: block;
@@ -14,8 +20,41 @@ body{
     position: relative;
     top: 120px;
     border-radius: 100%;
-    border: solid #2d3436 5px;
+    border: solid #dfe6e9 5px;
     display: block;
     margin-right: auto;
     margin-left: auto;
+}.title{
+    margin-top: 110px;
+    text-align: center;
+}
+.content{
+    display: block;
+    background-color: #c1cace;
+    width: 40%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    color: #2d3436;
+    text-align: center;
+    border: solid #2d3436 2px;
+    border-radius: 15px;
+}
+.content p{
+    padding: 15px 10px;
+}
+.social{
+    display: block;
+    text-align: center;
+}
+.social ul{
+    list-style: none;
+}
+.social li{
+    display: inline;
+    padding-left: 35px;
+}
+.icon{
+    padding-right: 10px;
+    font-size: 30px;
 }
