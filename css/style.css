@@ -35,10 +35,11 @@ a {
     }
     .social{
         display: block;
-        text-align: center;
+        margin-left: 30%;
     }
     .social ul{
         list-style: none;
+
     }
     .social li{
         display: inline;
