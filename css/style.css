@@ -7,6 +7,9 @@ body{
     background-color: #dfe6e9;
     color: #2d3436;
 }
+a {
+    color: #2d3436;
+}
 @media only screen and (min-width: 1025px){
     .header{
         display: block;
@@ -66,40 +69,40 @@ body{
         display: block;
         background-image: url(../img/background.jpg);
         background-size: cover;
-        width: 97%;
-        height: 250px;
+        width: 90%;
+        height: 300px;
         margin:0 auto;
         border-radius: 10px;
     }
     .profile-picture{
         position: relative;
-        top: 115px;
+        top: 160px;
         border-radius: 100%;
         border: solid #dfe6e9 5px;
         display: block;
         margin-right: auto;
         margin-left: auto;
-        width: 200px;
+        width: 180px;
     }
     .title{
-        margin-top: 85px;
+        margin-top: 60px;
         text-align: center;
     }
     .social{
-        text-align: center;
         display: block;
     }
     .social ul{
+        margin-left: 12%;
         list-style: none;
     }
     .social li{
-        font: 15px;
+        font: 14px;
         display: inline;
         padding-left: 35px;
     }
     .icon{
-        padding-right: 5px;
-        font-size: 15px;
+
+        font-size: 25px;
     }
     .content{
         display: block;
