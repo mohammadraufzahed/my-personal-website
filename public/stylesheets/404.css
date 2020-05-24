@@ -1,0 +1,27 @@
+body{
+    background-color: #2d3436 !important;
+    color: #dfe6e9 !important;
+    direction: ltr;
+}
+#pageNotFound-container{
+    width: 90%;
+    margin: 0 auto;
+}
+#pageNotFound-title{
+    text-align: center;
+    float: left;
+    font-weight: bold;
+    font-size: 40pt;
+}
+#pageNotFound-bulb{
+    float: left;
+    height: 400px;
+}
+#pageNotFound-description{
+    float: left;
+    font-size: 20pt;
+}
+#pageNotFound-text-container{
+    width: auto;
+    padding-top: 150px;
+}
