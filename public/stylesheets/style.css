@@ -5,6 +5,10 @@
 body{
   background-color: #DFE6E9;
   font-family: 'Anton Regular';
+  color: #2d3436;
+}
+.clear{
+  clear: both;
 }
 *{
   box-sizing: border-box;
@@ -16,6 +20,7 @@ body{
   margin: 0 auto;
 }
 #navbar-top{
+  overflow: hidden;
   display: flex;
   width: 90%;
   height: auto;
@@ -26,10 +31,10 @@ body{
 }
 .navbar-links{
   text-decoration: none;
-  color: #2d3436;
   font-size: 13pt;
   padding: 7px 0px 7px 0px;
   margin-left: 20px;
+  color: #2d3436;
 }
 .navbar-links:hover{
   color: white;
@@ -53,4 +58,79 @@ body{
 #header small{
   font-weight: lighter;
   font-size: 15pt;
+}
+#aboutMe{
+  padding-top: 20px;
+  width: 90%;
+  margin: 0 auto;
+}
+#aboutMe-title{
+  text-align: center;
+  font-weight: bold;
+  font-size: 25pt;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+#aboutMe-content{
+  overflow: hidden;
+  width: 80%;
+  margin: 0 auto;
+  height: 300px;
+  background-color: #C1CACE;
+  border-radius: 15px;
+  text-align: left;
+}
+#aboutMe-pic{
+  height: 100%;
+  box-shadow: 0px 0px 20px 0px;
+  float: left;
+}
+#aboutMe-text{
+  width: 65%;
+  float: right;
+  font-size: 14pt;
+  padding-top: 80px;
+  text-align: center;
+  padding-right: 10px;
+}
+#skills-container{
+  padding-top: 20px;
+  width: 90%;
+  margin: 0 auto;
+}
+#skills-title{
+  text-align: center;
+  font-size: 25pt;
+}
+#skills-box-container{
+  padding-top: 20px;
+  width: 70%;
+  margin: 0 auto;
+}
+.skill-container{
+  width: 200px;
+  float: left;
+  padding-left: 150px;
+}
+.progress-bar{
+  font-size: 17pt;
+}
+.ldBar path.mainline{
+  stroke-linecap: round;
+  stroke-width: 10px;
+  stroke: #2d3436;
+}
+.ldBar path.baseline{
+  stroke: #C1CACE;
+  stroke-width: 10px;
+  stroke-linecap: round;
+}
+.ldBar {
+  width: 140px !important;
+  height: 140px !important;
+}
+
+.skill-title{
+  padding-top: 10px;
+  padding-left: 40px;
 }

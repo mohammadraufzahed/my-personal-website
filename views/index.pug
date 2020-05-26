@@ -1,6 +1,8 @@
 extend layout
 block header
     title Mohammad Raufzahed
+    link(rel='stylesheet', href='stylesheets/loading-bar.min.css', type='text/css')
+    script(src='javascripts/loading-bar.min.js')
 block content
     div(id="container")
         div(id='navbar-top')
@@ -9,3 +11,21 @@ block content
         div(id='header')
             h1(id='webSite-title') Mohammad Raufzahed
             small() Web Developer
+        div(id='aboutMe')
+            h2(id='aboutMe-title') About me
+            div(id='aboutMe-content')
+                img(id='aboutMe-pic', src='images/profile.jpg')
+                p(id='aboutMe-text') Hi. My name is Muhammad and i live in Iran. i'm a freelance Web Developer that started this job when i was 14 and I love that. I Did lot of thing , like Develop the Website for the companes and for my self. I love my job and  want to do it better and learn more about it. I worked on several Open Source projects in Github.
+        div(id='skills-container')
+            h2(id='skills-title') My Skills
+            div(class='clear')
+                div(id='skills-box-container')
+                    div(class='skill-container')
+                        div(class='ldBar label-center progress-bar', data-value='30', data-preset='circle')
+                        h3(class='skill-title') HTML
+                    div(class='skill-container')
+                        div(class='ldBar label-center progress-bar', data-value='30', data-preset='circle')
+                        h3(class='skill-title') CSS
+                    div(class='skill-container')
+                        div(class='ldBar label-center progress-bar', data-value='30', data-preset='circle')
+                        h3(class='skill-title') Javascript
