@@ -9,5 +9,5 @@ router.get('/', function(req, res, next) {
 router.use(function(req, res, nex){
   res.status(404);
   res.render('error/404')
-})
+});
 module.exports = router;
