@@ -1,10 +1,17 @@
-@font-face {
-  font-family: 'Anton Regular';
-  src: url("../fonts/Anton-Regular.ttf");
-}
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 body{
   background-color: #DFE6E9;
-  font-family: 'Anton Regular';
+  font-family: 'Anton';
+  color: #2d3436;
+}
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+.clear{
+  clear: both;
 }
 *{
   box-sizing: border-box;
@@ -15,54 +22,171 @@ body{
   width: 85%;
   margin: 0 auto;
 }
-#picture-cover{
-  background-image: url('../images/background.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 300px;
-  border-radius: 10px;
-  z-index: -2;
-}
-#profile-pic{
-  width: 200px;
-  display: block;
+#navbar-top{
+  overflow: hidden;
+  display: flex;
+  width: 90%;
+  height: auto;
   margin: 0 auto;
-  border-radius: 100%;
-  z-index: 2;
-  margin-top: -130px;
-  border: solid #dfe6e9 5px;
+  margin-bottom: 12px;
+  background-color: #C1CACE;
+  border-radius: 5px;
 }
-#site-title{
-  font-family: 'Anton Regular';
-  font-weight: bold;
-  text-align: center;
-  padding-top: 10px;
+.navbar-links{
+  text-decoration: none;
+  font-size: 13pt;
+  padding: 7px 0px 7px 0px;
+  margin-left: 20px;
   color: #2d3436;
 }
-#social-media{
-  width: auto;
-  text-align: center;
-  padding-top: 10px;
+.navbar-links:hover{
+  color: white;
+  transition: 0.5s ease;
 }
-#social-media a{
+#header{
+  text-align: center;
+  margin: 0 auto;
+  width: 90%;
+  height: 300px;
+  border-radius: 15px;
+  background-size: auto;
+  background-image: url('../images/background.jpg');
+  color: white;
+}
+#webSite-title{
+  font-weight: bold;
+  font-size: 30pt;
+  padding-top: 100px;
+}
+#header small{
+  font-weight: lighter;
+  font-size: 15pt;
+}
+#aboutMe{
+  padding-top: 20px;
+  width: 90%;
+  margin: 0 auto;
+}
+#aboutMe-title{
+  text-align: center;
+  font-weight: bold;
+  font-size: 25pt;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+#aboutMe-content{
+  overflow: hidden;
+  width: 80%;
+  margin: 0 auto;
+  height: 300px;
+  background-color: #C1CACE;
+  border-radius: 15px;
+  text-align: left;
+}
+#aboutMe-pic{
+  height: 100%;
+  box-shadow: 0px 0px 20px 0px;
+  float: left;
+}
+#aboutMe-text{
+  width: 65%;
+  float: right;
+  font-size: 14pt;
+  padding-top: 80px;
+  text-align: center;
+  padding-right: 10px;
+}
+#skills-container{
+  padding-top: 50px;
+  width: 90%;
+  margin: 0 auto;
+}
+#skills-title{
+  text-align: center;
+  font-size: 25pt;
+}
+#skills-box-container{
+  padding-top: 20px;
+  width: 70%;
+  margin: 0 auto;
+}
+.skill-container{
+  width: 200px;
+  float: left;
+  padding-left: 150px;
+}
+.progress-bar{
+  font-size: 17pt;
+}
+.ldBar path.mainline{
+  stroke-linecap: round;
+  stroke-width: 10px;
+  stroke: #2d3436;
+}
+.ldBar path.baseline{
+  stroke: #C1CACE;
+  stroke-width: 10px;
+  stroke-linecap: round;
+}
+.ldBar {
+  width: 140px !important;
+  height: 140px !important;
+}
+
+.skill-title{
+  padding-top: 10px;
+  padding-left: 40px;
+}
+#portfolios-container{
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 50px;
+}
+#portfolios-title{
+  font-size: 25pt;
+}
+.portfolios-box{
+  margin-top: 50px;
+  border-radius: 20px;
+  width: 480px;
+  background-color: #C1CACE;
+}
+.portfolios-pic{
+  border-radius: 20px;
+  width: 100%;
+}
+.protfolios-title{
+  padding-top: 10px;
+  font-weight: bold;
+  font-size: 20pt;
+}
+.portfolio-description{
+  font-size: 12pt;
+  font-weight: lighter;
+  padding-top: 15px;
+}
+.icon-port{
   text-decoration: none;
   color: #2d3436;
-  font-size: 20pt;
-  padding-right: 20px;
+  padding-top: 10px;
+  padding-left: 20px;
+  font-size: 15pt;
+  padding-bottom: 10px;
 }
-#content{
-  margin: 0 auto;
-  margin-top: 20px;
-  width: 80%;
-  height: auto;
-  font-family: 'Anton Regular';
-  text-align: center;
-  background-color: #c1cace;
-  border: solid #93a1a5 2px;
-  border-radius: 13px;
+#portfolio-button{
+  position: relative;
+  top: 30px;
+  text-decoration: none;
 }
-#content p{
-  padding: 30px 0px;
-  color: #2d3436;
+#portfolio-button button{
+  padding: 15px;
+  font-size: 15pt;
+  border-radius: 25px;
+  border: 0px;
+  background-color: #C1CACE;
+  cursor: pointer;
+}
+#portfolio-button button:hover{
+  color: white;
 }

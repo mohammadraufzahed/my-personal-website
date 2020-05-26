@@ -1,17 +1,56 @@
 extend layout
 block header
     title Mohammad Raufzahed
+    link(rel='stylesheet', href='stylesheets/loading-bar.min.css', type='text/css')
+    script(src='javascripts/loading-bar.min.js')
 block content
     div(id="container")
-        div(id='picture-cover')
-        img(id='profile-pic', src='images/profile.jpg')
-        h1(id='site-title') Mohammad Raufzahed
-        div(id='social-media')
-            a(href='#')
-                i(class='fab fa-telegram icon')
-            a(href='#')
-                i(class='fab fa-github icon')
-            a(href='#')
-                i(class='fas fa-envelope icon')
-            div(id='content')
-                p Hi! I'm Mohammad. I'm a nerd and i love developing websites and i interested in Free Software and Open Source softwares. I live in Tehran and i love it.
+        div(id='navbar-top')
+            a(class='navbar-links', href='#') Home
+            a(class='navbar-links', href='#aboutMe') About me
+            a(class='navbar-links', href='#skills-container') Skills
+            a(class='navbar-links', href='#portfolios-container') Portfolios
+        div(id='header')
+            h1(id='webSite-title') Mohammad Raufzahed
+            small() Web Developer
+        div(id='aboutMe')
+            h2(id='aboutMe-title') About me
+            div(id='aboutMe-content')
+                img(id='aboutMe-pic', src='images/profile.jpg')
+                p(id='aboutMe-text') Hi. My name is Muhammad and i live in Iran. i'm a freelance Web Developer that started this job when i was 14 and I love that. I Did lot of thing , like Develop the Website for the companes and for my self. I love my job and  want to do it better and learn more about it. I worked on several Open Source projects in Github.
+        div(id='skills-container')
+            h2(id='skills-title') My Skills
+            div(class='clear')
+                div(id='skills-box-container')
+                    div(class='skill-container')
+                        div(class='ldBar label-center progress-bar', data-value='40', data-preset='circle')
+                        h3(class='skill-title') HTML
+                    div(class='skill-container')
+                        div(class='ldBar label-center progress-bar', data-value='40', data-preset='circle')
+                        h3(class='skill-title') CSS
+                    div(class='skill-container')
+                        div(class='ldBar label-center progress-bar', data-value='20', data-preset='circle')
+                        h3(class='skill-title') Javascript
+        div(class='clear')
+        div(id='portfolios-container')
+            h2(id='portfolios-title') My Portfolios
+            div(class='clear')
+            div(class='portfolios-box left')
+                img(class='portfolios-pic', src='images/portfolio-1.png')
+                h3(class='protfolios-title') Cuda
+                p(class='portfolio-description') Cuda is a simple Portfolio Theme. I created this theme in my free time from a psd i found in the internet :)
+                a(href='https://github.com/mohammadraufzahed/cuda', target='_blank')
+                    i(class='fab fa-github icon-port')
+                a(href='https://mohammadraufzahed.github.io/cuda', target='_blank')
+                    i(class="fas fa-link icon-port")
+            div(class='portfolios-box right')
+                img(class='portfolios-pic' src='images/portfolio-2.png')
+                h3(class='protfolios-title') Alex
+                p(class='portfolio-description') Alex is a OnePage Theme. I created this theme in my free time from a psd i found in the internet :)
+                a(href='https://github.com/mohammadraufzahed/alex', target='_blank')
+                    i(class='fab fa-github icon-port')
+                a(href='https://mohammadraufzahed.github.io/alex/', target='_blank')
+                    i(class="fas fa-link icon-port")
+            div(class='clear')
+            a(href='https://github.com/mohammadraufzahed' id='portfolio-button')
+                button() See more
