@@ -190,3 +190,30 @@ body{
 #portfolio-button button:hover{
   color: white;
 }
+#contactMe{
+  padding-top: 50px;
+  width: max-content;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 50px;
+}
+.inputs:first-child{
+  margin-right: 20px;
+}
+::placeholder{
+  position: relative;
+  top: 0px;
+}
+.massege{
+  margin-bottom: 10px;
+  width: 100%;
+  height: 300px;
+}
+#submit{
+  margin-bottom: 10px;
+  background-color: #C1CACE;
+  border: 0;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 25px;
+}

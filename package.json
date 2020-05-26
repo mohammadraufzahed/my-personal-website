@@ -1,6 +1,6 @@
 {
   "name": "Mohammad-Raufzahed",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "My personal Website",
   "author": {
     "name": "Mohammad Raufzahed",
@@ -13,11 +13,14 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
+    "body-parser": "latest",
+    "express-handlebars": "latest",
     "cookie-parser": "latest",
     "debug": "latest",
     "express": "latest",
     "http-errors": "latest",
     "morgan": "latest",
+    "nodemailer": "latest",
     "pug": "latest"
   }
 }

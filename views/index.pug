@@ -54,3 +54,14 @@ block content
             div(class='clear')
             a(href='https://github.com/mohammadraufzahed' id='portfolio-button')
                 button() See more
+        div(class='clear')
+        div(id='contactMe')
+            h2(id='contactMe-title') Contact Me
+            form(onsubmit='sendMail()', target='_self')
+                input(type="text", name="subject", id='subject', placeholder='Subject', class='inputs')
+                input(type="email", name="email", id='mail', placeholder='Email', class='inputs')
+                div(class='clear')
+                input(type="text", name="message", id='message', placeholder='Message', class='inputs', style='margin-top: 10px', class='massege')
+                div(class='clear')
+                input(type="submit", value="Send it", id='submit')
+        script(src="javascripts/mail.js")
