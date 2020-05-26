@@ -6,8 +6,10 @@ block header
 block content
     div(id="container")
         div(id='navbar-top')
-            a(class='navbar-links', href="#") Home
-            a(class='navbar-links', href="#aboutMe") About me
+            a(class='navbar-links', href='#') Home
+            a(class='navbar-links', href='#aboutMe') About me
+            a(class='navbar-links', href='#skills-container') Skills
+            a(class='navbar-links', href='#portfolios-container') Portfolios
         div(id='header')
             h1(id='webSite-title') Mohammad Raufzahed
             small() Web Developer
@@ -21,11 +23,34 @@ block content
             div(class='clear')
                 div(id='skills-box-container')
                     div(class='skill-container')
-                        div(class='ldBar label-center progress-bar', data-value='30', data-preset='circle')
+                        div(class='ldBar label-center progress-bar', data-value='40', data-preset='circle')
                         h3(class='skill-title') HTML
                     div(class='skill-container')
-                        div(class='ldBar label-center progress-bar', data-value='30', data-preset='circle')
+                        div(class='ldBar label-center progress-bar', data-value='40', data-preset='circle')
                         h3(class='skill-title') CSS
                     div(class='skill-container')
-                        div(class='ldBar label-center progress-bar', data-value='30', data-preset='circle')
+                        div(class='ldBar label-center progress-bar', data-value='20', data-preset='circle')
                         h3(class='skill-title') Javascript
+        div(class='clear')
+        div(id='portfolios-container')
+            h2(id='portfolios-title') My Portfolios
+            div(class='clear')
+            div(class='portfolios-box left')
+                img(class='portfolios-pic', src='images/portfolio-1.png')
+                h3(class='protfolios-title') Cuda
+                p(class='portfolio-description') Cuda is a simple Portfolio Theme. I created this theme in my free time from a psd i found in the internet :)
+                a(href='https://github.com/mohammadraufzahed/cuda', target='_blank')
+                    i(class='fab fa-github icon-port')
+                a(href='https://mohammadraufzahed.github.io/cuda', target='_blank')
+                    i(class="fas fa-link icon-port")
+            div(class='portfolios-box right')
+                img(class='portfolios-pic' src='images/portfolio-2.png')
+                h3(class='protfolios-title') Alex
+                p(class='portfolio-description') Alex is a OnePage Theme. I created this theme in my free time from a psd i found in the internet :)
+                a(href='https://github.com/mohammadraufzahed/alex', target='_blank')
+                    i(class='fab fa-github icon-port')
+                a(href='https://mohammadraufzahed.github.io/alex/', target='_blank')
+                    i(class="fas fa-link icon-port")
+            div(class='clear')
+            a(href='https://github.com/mohammadraufzahed' id='portfolio-button')
+                button() See more

@@ -1,11 +1,14 @@
-@font-face {
-  font-family: 'Anton Regular';
-  src: url("../fonts/Anton-Regular.ttf");
-}
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 body{
   background-color: #DFE6E9;
-  font-family: 'Anton Regular';
+  font-family: 'Anton';
   color: #2d3436;
+}
+.left{
+  float: left;
+}
+.right{
+  float: right;
 }
 .clear{
   clear: both;
@@ -94,7 +97,7 @@ body{
   padding-right: 10px;
 }
 #skills-container{
-  padding-top: 20px;
+  padding-top: 50px;
   width: 90%;
   margin: 0 auto;
 }
@@ -133,4 +136,57 @@ body{
 .skill-title{
   padding-top: 10px;
   padding-left: 40px;
+}
+#portfolios-container{
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 50px;
+}
+#portfolios-title{
+  font-size: 25pt;
+}
+.portfolios-box{
+  margin-top: 50px;
+  border-radius: 20px;
+  width: 480px;
+  background-color: #C1CACE;
+}
+.portfolios-pic{
+  border-radius: 20px;
+  width: 100%;
+}
+.protfolios-title{
+  padding-top: 10px;
+  font-weight: bold;
+  font-size: 20pt;
+}
+.portfolio-description{
+  font-size: 12pt;
+  font-weight: lighter;
+  padding-top: 15px;
+}
+.icon-port{
+  text-decoration: none;
+  color: #2d3436;
+  padding-top: 10px;
+  padding-left: 20px;
+  font-size: 15pt;
+  padding-bottom: 10px;
+}
+#portfolio-button{
+  position: relative;
+  top: 30px;
+  text-decoration: none;
+}
+#portfolio-button button{
+  padding: 15px;
+  font-size: 15pt;
+  border-radius: 25px;
+  border: 0px;
+  background-color: #C1CACE;
+  cursor: pointer;
+}
+#portfolio-button button:hover{
+  color: white;
 }
