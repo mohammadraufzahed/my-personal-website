@@ -1,219 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-body{
-  background-color: #DFE6E9;
-  font-family: 'Anton';
-  color: #2d3436;
-}
-.left{
-  float: left;
-}
-.right{
-  float: right;
-}
-.clear{
-  clear: both;
-}
-*{
-  box-sizing: border-box;
-  margin: 0;
-}
-#container{
-  padding-top: 20px;
-  width: 85%;
-  margin: 0 auto;
-}
-#navbar-top{
-  overflow: hidden;
-  display: flex;
-  width: 90%;
-  height: auto;
-  margin: 0 auto;
-  margin-bottom: 12px;
-  background-color: #C1CACE;
-  border-radius: 5px;
-}
-.navbar-links{
-  text-decoration: none;
-  font-size: 13pt;
-  padding: 7px 0px 7px 0px;
-  margin-left: 20px;
-  color: #2d3436;
-}
-.navbar-links:hover{
-  color: white;
-  transition: 0.5s ease;
-}
-#header{
-  text-align: center;
-  margin: 0 auto;
-  width: 90%;
-  height: 300px;
-  border-radius: 15px;
-  background-size: auto;
-  background-image: url('../images/background.jpg');
-  color: white;
-}
-#webSite-title{
-  font-weight: bold;
-  font-size: 30pt;
-  padding-top: 100px;
-}
-#header small{
-  font-weight: lighter;
-  font-size: 15pt;
-}
-#aboutMe{
-  padding-top: 20px;
-  width: 90%;
-  margin: 0 auto;
-}
-#aboutMe-title{
-  text-align: center;
-  font-weight: bold;
-  font-size: 25pt;
-  padding-top: 20px;
-  padding-bottom: 10px;
-}
-#aboutMe-content{
-  overflow: hidden;
-  width: 80%;
-  margin: 0 auto;
-  height: 300px;
-  background-color: #C1CACE;
-  border-radius: 15px;
-  text-align: left;
-}
-#aboutMe-pic{
-  height: 100%;
-  box-shadow: 0px 0px 20px 0px;
-  float: left;
-}
-#aboutMe-text{
-  width: 65%;
-  float: right;
-  font-size: 14pt;
-  padding-top: 80px;
-  text-align: center;
-  padding-right: 10px;
-}
-#skills-container{
-  padding-top: 50px;
-  width: 90%;
-  margin: 0 auto;
-}
-#skills-title{
-  text-align: center;
-  font-size: 25pt;
-}
-#skills-box-container{
-  padding-top: 20px;
-  width: 70%;
-  margin: 0 auto;
-}
-.skill-container{
-  width: 200px;
-  float: left;
-  padding-left: 150px;
-}
-.progress-bar{
-  font-size: 17pt;
-}
-.ldBar path.mainline{
-  stroke-linecap: round;
-  stroke-width: 10px;
-  stroke: #2d3436;
-}
-.ldBar path.baseline{
-  stroke: #C1CACE;
-  stroke-width: 10px;
-  stroke-linecap: round;
-}
-.ldBar {
-  width: 140px !important;
-  height: 140px !important;
+* {
+    box-sizing: border-box;
+    margin: 0;
 }
 
-.skill-title{
-  padding-top: 10px;
-  padding-left: 40px;
+body {
+    direction: ltr;
+    background-color: #EFEFEF;
+    color: #222831;
 }
-#portfolios-container{
-  width: 90%;
-  margin: 0 auto;
-  text-align: center;
-  padding-top: 50px;
+
+#container {
+    position: absolute;
+    width: 50%;
+    bottom: 0;
+    margin-bottom: 110px;
+    margin-left: 70px;
 }
-#portfolios-title{
-  font-size: 25pt;
+
+#line {
+    width: 100px;
+    background-color: #2F2F2F;
+    height: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
-.portfolios-box{
-  margin-top: 50px;
-  border-radius: 20px;
-  width: 480px;
-  background-color: #C1CACE;
+
+#title {
+    font-size: 40pt;
+    font-weight: lighter;
+    color: #2F2F2F;
 }
-.portfolios-pic{
-  border-radius: 20px;
-  width: 100%;
+
+#aboutMe {
+    line-height: 45px;
+    color: #898989;
+    text-align: left;
 }
-.protfolios-title{
-  padding-top: 10px;
-  font-weight: bold;
-  font-size: 20pt;
-}
-.portfolio-description{
-  font-size: 12pt;
-  font-weight: lighter;
-  padding-top: 15px;
-}
-.icon-port{
-  text-decoration: none;
-  color: #2d3436;
-  padding-top: 10px;
-  padding-left: 20px;
-  font-size: 15pt;
-  padding-bottom: 10px;
-}
-#portfolio-button{
-  position: relative;
-  top: 30px;
-  text-decoration: none;
-}
-#portfolio-button button{
-  padding: 15px;
-  font-size: 15pt;
-  border-radius: 25px;
-  border: 0px;
-  background-color: #C1CACE;
-  cursor: pointer;
-}
-#portfolio-button button:hover{
-  color: white;
-}
-#contactMe{
-  padding-top: 50px;
-  width: max-content;
-  margin: 0 auto;
-  text-align: center;
-  margin-top: 50px;
-}
-.inputs:first-child{
-  margin-right: 20px;
-}
-::placeholder{
-  position: relative;
-  top: 0px;
-}
-.massege{
-  margin-bottom: 10px;
-  width: 100%;
-  height: 300px;
-}
-#submit{
-  margin-bottom: 10px;
-  background-color: #C1CACE;
-  border: 0;
-  padding: 5px;
-  cursor: pointer;
-  border-radius: 25px;
+#icon i{
+    font-size: 20pt;
+    padding-left: 20px;
+    padding-top: 20px;
+    color: #2F2F2F;
 }
