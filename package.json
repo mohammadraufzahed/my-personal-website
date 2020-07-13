@@ -1,26 +1,16 @@
 {
-  "name": "Mohammad-Raufzahed",
-  "version": "2.0.0",
-  "description": "My personal Website",
-  "author": {
-    "name": "Mohammad Raufzahed",
-    "email": "mohammadraufzahed@protonmail.com",
-    "url": "https://mohammadraufzahed.ir"
-  },
-  "license": "GPL-3.0-only",
+  "name": "untitled",
+  "version": "0.0.0",
   "private": true,
   "scripts": {
     "start": "node ./bin/www"
   },
   "dependencies": {
-    "body-parser": "latest",
-    "express-handlebars": "latest",
     "cookie-parser": "latest",
     "debug": "latest",
     "express": "latest",
+    "hbs": "latest",
     "http-errors": "latest",
-    "morgan": "latest",
-    "nodemailer": "latest",
-    "pug": "latest"
+    "morgan": "latest"
   }
 }
