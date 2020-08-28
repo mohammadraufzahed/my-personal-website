@@ -1,9 +1,0 @@
-{
-  "app": "mohammadraufzahed",
-  "port": 3000,
-  "platform": "node",
-  "node": {
-    "version": "12",
-    "npmAudit": true
-  }
-}
