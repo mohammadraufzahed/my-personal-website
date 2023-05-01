@@ -2,6 +2,7 @@
 import Navbar from "../components/Navbar.astro";
 import "../styles/global.scss";
 import "normalize.css/normalize.css";
+import { Icon } from "astro-icon";
 ---
 
 <html lang="en">
@@ -26,5 +27,240 @@ import "normalize.css/normalize.css";
   </head>
   <body>
     <Navbar />
+    <div class="projects">
+      <div class="flex">
+        <div class="info">
+          <div class="header">
+            <h1>
+              Hello, I&apos;m Mohammad, a Front-End Developer With 2+ years of
+              experience.
+            </h1>
+            <p>
+              Passionate about design for positive impact. Creating
+              user-centric, delightful web experiences. Let's craft
+              human-centered solutions!
+            </p>
+          </div>
+          <div class="footer">
+            <button>Contact Me</button>
+            <div class="icons">
+              <div>
+                <Icon name="fa:linkedin" size={20} />
+              </div>
+              <div>
+                <Icon name="fa:github" size={20} />
+              </div>
+              <div>
+                <Icon name="fa:instagram" size={20} />
+              </div>
+            </div>
+          </div>
+          <img src="/info_bg.jpg" alt="" />
+        </div>
+        <div class="avatar"></div>
+      </div>
+      <div class="flex">
+        <div></div>
+        <div></div>
+      </div>
+      <div class="flex reverse">
+        <div></div>
+        <div></div>
+      </div>
+    </div>
   </body>
 </html>
+
+<style lang="scss" scoped>
+  .projects {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 28px;
+    > .flex {
+      width: 100%;
+      height: max-content;
+      display: flex;
+
+      align-items: center;
+      gap: 20px;
+      &:first-of-type {
+        flex-direction: column-reverse;
+      }
+      @media only screen and (min-width: 1024px) {
+        & {
+          flex-direction: row !important;
+          padding-inline: 24px;
+        }
+      }
+      @media only screen and (min-width: 1280px) {
+        & {
+          padding-inline: 0px;
+        }
+      }
+      &.reverse {
+        flex-direction: row-reverse;
+      }
+      > div {
+        width: 90%;
+        flex: auto;
+        height: 479px;
+        border-radius: 10px;
+        overflow: hidden;
+        &:first-of-type {
+          @media only screen and (min-width: 1024px) {
+            & {
+              width: min(55%, 843px);
+            }
+          }
+        }
+        &:last-of-type {
+          @media only screen and (min-width: 1024px) {
+            & {
+              width: min(45%, 525px);
+            }
+          }
+        }
+        &.avatar {
+          position: relative;
+          filter: drop-shadow(-5px 7px 8px rgba(0, 0, 0, 0.5));
+          background-image: url("/avatar.svg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          opacity: 0;
+          animation: 1s initial_avatar ease forwards;
+          animation-delay: 800ms;
+        }
+        &.info {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: space-between;
+          position: relative;
+          opacity: 0;
+          animation: 1s initial_info ease forwards;
+          animation-delay: 1.8s;
+          filter: drop-shadow(-5px 8px 8px #09161c);
+          > img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            opacity: 0.9;
+            filter: blur(2px);
+          }
+          > div {
+            z-index: 10;
+          }
+          > .header {
+            width: 100%;
+            height: max-content;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 46px;
+            padding: 36px 32px;
+            position: relative;
+            color: white;
+            > h1 {
+              margin: unset;
+              font-weight: bold;
+              font-size: 26px;
+            }
+            > p {
+              font-weight: 500;
+              font-size: 16px;
+            }
+            @media only screen and (min-width: 1280px) {
+              & {
+                gap: 56px;
+                > h1 {
+                  font-size: 36px;
+                }
+                > p {
+                  font-size: 20px;
+                }
+              }
+            }
+          }
+          > .footer {
+            width: 100%;
+            height: max-content;
+            padding-inline: 32px;
+            padding-bottom: 36px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            > button {
+              background: #ffffff;
+              box-shadow: -8px 6px 0px #cdcdcd;
+              border-radius: 10px;
+              padding: 10px 20px;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              font-weight: 700;
+              font-size: 20px;
+              border: unset;
+              outline: unset;
+              cursor: pointer;
+              transition: 300ms ease;
+              transition-property: transform;
+              &:hover {
+                transform: translateY(-3px);
+              }
+            }
+            > .icons {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: center;
+              gap: 16px;
+              > div {
+                background-color: white;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-inline: 8px;
+                padding-block: 8px;
+                transition: 300ms ease;
+                transition-property: transform;
+                cursor: pointer;
+                &:hover {
+                  transform: translateY(-3px);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @keyframes initial_avatar {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes initial_info {
+    from {
+      opacity: 0;
+      transform: translateY(35px);
+      scale: 0.9;
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0px);
+      scale: 1;
+    }
+  }
+</style>
