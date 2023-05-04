@@ -7,15 +7,22 @@ import { Icon } from "astro-icon";
     ><button>Contact Me</button></a
   >
   <div class="icons">
-    <div>
-      <Icon name="fa:linkedin" size={20} />
-    </div>
-    <div>
-      <Icon name="fa:github" size={20} />
-    </div>
-    <div>
-      <Icon name="fa:instagram" size={20} />
-    </div>
+    <a href="https://www.linkedin.com/in/mohammad-raufzahed-59b945264">
+      <div>
+        <Icon name="fa:linkedin" size={20} />
+      </div></a
+    >
+
+    <a href="https://github.com/mohammadraufzahed">
+      <div>
+        <Icon name="fa:github" size={20} />
+      </div></a
+    >
+    <a href="https://www.instagram.com/mohammadraufzahed/">
+      <div>
+        <Icon name="fa:instagram" size={20} />
+      </div></a
+    >
   </div>
 </div>
 <style lang="scss" scoped>
@@ -63,19 +70,23 @@ import { Icon } from "astro-icon";
       align-items: center;
       justify-content: center;
       gap: 16px;
-      > div {
-        background-color: white;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding-inline: 8px;
-        padding-block: 8px;
-        transition: 300ms ease;
-        transition-property: transform;
-        cursor: pointer;
-        &:hover {
-          transform: translateY(-3px);
+      > a {
+        text-decoration: none;
+        color: black;
+        > div {
+          background-color: white;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding-inline: 8px;
+          padding-block: 8px;
+          transition: 300ms ease;
+          transition-property: transform;
+          cursor: pointer;
+          &:hover {
+            transform: translateY(-3px);
+          }
         }
       }
     }
