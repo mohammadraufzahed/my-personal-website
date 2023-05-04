@@ -1,0 +1,91 @@
+---
+import BoxFooter from "./BoxFooter.astro";
+---
+
+<footer class="container">
+  <div class="wrapper">
+    <div class="bg"></div>
+    <span>Want to work together?</span>
+    <span
+      >Feel free to reach out for collaborations or just a friendly hello
+    </span>
+    <span>mohammadraufzahed@protonmail.com</span>
+    <div></div>
+    <div></div>
+    <BoxFooter />
+  </div>
+</footer>
+
+<style lang="scss" scoped>
+  .container {
+    width: 100%;
+    padding: 38px 34px;
+    margin-inline: auto;
+    position: relative;
+    overflow: hidden;
+    animation: show 1s ease 3.8s forwards;
+    opacity: 0;
+    > .wrapper {
+      width: 100%;
+      max-width: 436px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 14px;
+      > * {
+        position: relative;
+        z-index: 10;
+        &.bg {
+          width: 100%;
+          height: 100%;
+          max-width: unset;
+          position: absolute;
+          background: url("/footer_bg.jpg");
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          top: 0px;
+          left: 0px;
+          &::after {
+            content: " ";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.9);
+            opacity: 0.8;
+          }
+        }
+      }
+      > span {
+        font-weight: normal;
+        font-size: 16px;
+        color: white;
+        &:first-of-type {
+          font-weight: bold;
+          font-size: 32px;
+        }
+      }
+      #box_footer {
+        padding: unset;
+      }
+    }
+    @media only screen and (min-width: 1278px) {
+      & {
+        border-radius: 10px 10px 0px 0px;
+      }
+    }
+  }
+  @keyframes show {
+    from {
+      opacity: 0;
+      scale: 0.9;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      scale: 1;
+      transform: translateY(0px);
+    }
+  }
+</style>
