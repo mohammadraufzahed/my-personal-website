@@ -1,10 +1,9 @@
-@use "fontiran";
-
 html,
 body {
   width: 100vw;
   min-height: 100vh;
   height: max-content;
+  overflow: hidden;
 }
 
 body {
