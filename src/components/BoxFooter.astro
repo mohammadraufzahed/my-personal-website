@@ -3,7 +3,9 @@ import { Icon } from "astro-icon";
 ---
 
 <div id="box_footer" class="footer">
-  <button>Contact Me</button>
+  <a href="mailto:mohammadraufzahed@protonmail.com"
+    ><button>Contact Me</button></a
+  >
   <div class="icons">
     <div>
       <Icon name="fa:linkedin" size={20} />
@@ -20,7 +22,6 @@ import { Icon } from "astro-icon";
   .footer {
     width: 100%;
     height: max-content;
-
     display: flex;
     align-items: flex-start;
     flex-direction: column;
@@ -34,23 +35,26 @@ import { Icon } from "astro-icon";
         flex-direction: row;
       }
     }
-    > button {
-      background: #ffffff;
-      box-shadow: -8px 6px 0px #cdcdcd;
-      border-radius: 10px;
-      padding: 10px 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      font-weight: 700;
-      font-size: 20px;
-      border: unset;
-      outline: unset;
-      cursor: pointer;
-      transition: 300ms ease;
-      transition-property: transform;
-      &:hover {
-        transform: translateY(-3px);
+    > a {
+      text-decoration: none;
+      > button {
+        background: #ffffff;
+        box-shadow: -8px 6px 0px #cdcdcd;
+        border-radius: 10px;
+        padding: 10px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-weight: 700;
+        font-size: 20px;
+        border: unset;
+        outline: unset;
+        cursor: pointer;
+        transition: 300ms ease;
+        transition-property: transform;
+        &:hover {
+          transform: translateY(-3px);
+        }
       }
     }
     > .icons {
