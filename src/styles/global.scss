@@ -1,0 +1,15 @@
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  max-width: 1440px;
+  margin-inline: auto;
+}
