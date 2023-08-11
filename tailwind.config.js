@@ -12,6 +12,9 @@ export default {
       fontFamily: {
         'iran-yekan': ['"IRANYekanX"', 'tahoma', 'arial']
       },
+      borderRadius: {
+        box: 10,
+      },
       keyframes: {
         opacity: {
           from: {

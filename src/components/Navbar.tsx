@@ -23,9 +23,11 @@ const links = [
   },
 ];
 
-const NavbarBlock = block(function Navbar() {
+function NavbarBlock() {
   const [open, setOpen] = useState<boolean>(false);
-  const toggle = () => setOpen((open) => !open);
+  const toggle = () => {
+    setOpen((open) => !open);
+  };
   return (
     <nav className="relative w-full h-max flex flex-row items-center justify-between">
       <div className="w-max flex items-center justify-center gap-11">
@@ -65,7 +67,7 @@ const NavbarBlock = block(function Navbar() {
       </div>
     </nav>
   );
-});
+}
 
 const LinksContainerBlock = block(function ({ toggle }) {
   return (
