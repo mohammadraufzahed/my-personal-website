@@ -15,6 +15,9 @@ export default {
       borderRadius: {
         box: 10,
       },
+      lineHeight: {
+        header: '165%'
+      },
       keyframes: {
         opacity: {
           from: {
