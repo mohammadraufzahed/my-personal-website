@@ -1,5 +1,6 @@
-import HeroBlock from "../components/Hero";
-import Skills from "../components/Skills";
+import { lazy } from "react";
+const HeroBlock = lazy(() => import("../components/Hero"));
+const Skills = lazy(() => import("../components/Skills"));
 
 function HomePage() {
   return (
