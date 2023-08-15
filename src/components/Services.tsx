@@ -19,7 +19,7 @@ const services: { name: string; color: string }[] = [
 
 const Services = () => {
   return (
-    <div className="w-full h-max mt-[22px] flex flex-col gap-[52px]">
+    <div className="w-full h-max flex flex-col gap-[52px]">
       <h2 className="w-full font-black text-primary text-center text-xl sm:text-2xl leading-header md:text-3xl md:leading-header  lg:text-5xl lg:leading-header">
         متمرکز بر روی ساخت یک تجربه عالی و بی نقص برای مشتریان شما
       </h2>

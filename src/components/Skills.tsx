@@ -46,7 +46,7 @@ const Skills = () => {
     <Swiper
       dir="ltr"
       modules={[Autoplay]}
-      className="w-full"
+      className="w-full py-[33px]"
       autoplay={{ delay: 2000 }}
       breakpoints={{
         0: {
