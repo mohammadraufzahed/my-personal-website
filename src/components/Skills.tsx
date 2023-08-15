@@ -1,5 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
+import { block } from "million/react";
 
 const skills: { name: string; color: string }[] = [
   {
@@ -69,24 +70,32 @@ const Skills = () => {
       }}
       //   spaceBetween={83}
     >
-      {skills.map(({ color, name }) => (
+      {skills.map((props) => (
         <SwiperSlide key={`swiper_skills_${name}`}>
-          <div className="flex items-center justify-center gap-2.5">
-            <div
-              className="w-2 h-2 rounded-full"
-              style={{ backgroundColor: color }}
-            />
-            <span
-              className="w-max font-black text-base lg:text-xl"
-              style={{ color }}
-            >
-              {name}
-            </span>
-          </div>
+          <Box {...props} />
         </SwiperSlide>
       ))}
     </Swiper>
   );
 };
+
+type BoxProps = {
+  name: string;
+  color: string;
+};
+
+export const Box = block(({ color, name }: BoxProps) => {
+  return (
+    <div className="flex items-center justify-center gap-2.5">
+      <div
+        className="w-2 h-2 rounded-full"
+        style={{ backgroundColor: color }}
+      />
+      <span className="w-max font-black text-base lg:text-xl" style={{ color }}>
+        {name}
+      </span>
+    </div>
+  );
+});
 
 export default Skills;

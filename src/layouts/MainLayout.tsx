@@ -4,9 +4,9 @@ import FooterBlock from "../components/Footer";
 
 function MainLayoutBlock() {
   return (
-    <div className="w-full min-h-[96.7vh] flex flex-col justify-between gap-11">
+    <div className="w-full h-max flex flex-col justify-between gap-11">
       <NavbarBlock />
-      <div className="w-full flex-auto">
+      <div className="w-full h-max">
         <Outlet />
       </div>
       <FooterBlock />
