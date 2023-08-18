@@ -2,6 +2,7 @@ import Services from "../components/Services";
 import Skills from "../components/Skills";
 import HeroBlock from "../components/Hero";
 import PortfolioBlock from "../components/Portfolio";
+import ContactMeBlock from "../components/ContactMe";
 
 function HomePage() {
   return (
@@ -10,6 +11,7 @@ function HomePage() {
       <Skills />
       <Services />
       <PortfolioBlock />
+      <ContactMeBlock />
     </div>
   );
 }

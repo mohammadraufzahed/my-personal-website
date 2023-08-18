@@ -44,6 +44,7 @@ const skills: { name: string; color: string }[] = [
 const Skills = () => {
   return (
     <Swiper
+      id="about_me"
       dir="ltr"
       modules={[Autoplay]}
       className="w-full py-[33px]"

@@ -71,7 +71,10 @@ const portfolios: {
 
 const PortfolioBlock = block(() => {
   return (
-    <div className="w-full h-max flex flex-col items-center justify-start gap-[42px] py-8">
+    <div
+      id="portfolios"
+      className="w-full h-max flex flex-col items-center justify-start gap-[42px] py-8"
+    >
       <div className="w-max h-max flex flex-col items-center justify-start gap-4">
         <FaUserCircle size={32} className="text-primary" />
         <h2 className="w-full font-black text-primary text-center text-xl sm:text-2xl leading-header md:text-3xl md:leading-header  lg:text-5xl lg:leading-header">
@@ -95,7 +98,7 @@ const PortfolioBlock = block(() => {
                   alt={name}
                 />
               </div>
-              <div className="w-full h-full flex flex-col items-center justify-start gap-8 lg:h-[449px] lg:justify-between">
+              <div className="w-full h-full flex flex-col items-center justify-start gap-8 lg:h-[495px] lg:justify-between">
                 <div className="w-full h-max flex flex-col items-center justify-center gap-8 lg:items-start">
                   <h1 className="font-semibold text-xl text-primary">{name}</h1>
                   <p className="text-center text-base font-normal leading-content lg:text-right">

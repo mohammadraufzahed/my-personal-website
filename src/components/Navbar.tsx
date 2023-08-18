@@ -13,10 +13,10 @@ const links = [
     title: "درباره من",
     href: "#about_me",
   },
-  {
-    title: "رزومه",
-    href: "#resume",
-  },
+  // {
+  //   title: "رزومه",
+  //   href: "#resume",
+  // },
   {
     title: "تماس با من",
     href: "#contact_me",
@@ -89,12 +89,14 @@ const LinksContainerBlock = block(function ({ toggle }) {
 
 const LetsTalkBlock = block(function LetsTalk() {
   return (
-    <div className="text-primary flex flex-row items-center justify-center gap-4 border-b-2 border-primary pb-3.5">
-      <span className="font-semibold text-sm md:text-base lg:text-2xl ">
-        بیا صحبت کنیم
-      </span>
-      <FaArrowLeft className="w-4" />
-    </div>
+    <a href="mailto:mohammadraufzahedlink@proton.me">
+      <div className="text-primary cursor-pointer flex flex-row items-center justify-center gap-4 border-b-2 border-primary pb-3.5">
+        <span className="font-semibold text-sm md:text-base lg:text-2xl ">
+          بیا صحبت کنیم
+        </span>
+        <FaArrowLeft className="w-4" />
+      </div>
+    </a>
   );
 });
 
