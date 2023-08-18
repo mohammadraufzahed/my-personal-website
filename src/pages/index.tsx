@@ -1,7 +1,7 @@
-import { lazy } from "react";
 import Services from "../components/Services";
-const HeroBlock = lazy(() => import("../components/Hero"));
-const Skills = lazy(() => import("../components/Skills"));
+import Skills from "../components/Skills";
+import HeroBlock from "../components/Hero";
+import PortfolioBlock from "../components/Portfolio";
 
 function HomePage() {
   return (
@@ -9,6 +9,7 @@ function HomePage() {
       <HeroBlock />
       <Skills />
       <Services />
+      <PortfolioBlock />
     </div>
   );
 }
