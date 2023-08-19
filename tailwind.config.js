@@ -34,6 +34,9 @@ export default {
           },
         },
       },
+      backgroundImage: {
+        hero: "url('/images/hero-image.jpg')",
+      },
       animation: {
         sidebar: "sidebar 1s 0.3s ease forwards",
         opacity: "opacity .3s ease forwards",
