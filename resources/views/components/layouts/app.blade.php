@@ -10,9 +10,11 @@
 </head>
 
 <body class="font-iran-yekan bg-[#f3f7fa] p-8 pb-0">
-    <div class="w-full h-max flex flex-col justify-between gap-11">
+    <div class="w-full h-max flex flex-col justify-between gap-11 max-w-[1400px] mx-auto">
+        <x-navbar />
         {{ $slot }}
     </div>
+    @vite('./resources/js/app.ts')
 </body>
 
 </html>

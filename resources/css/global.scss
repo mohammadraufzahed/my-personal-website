@@ -1,6 +1,5 @@
 html,
-body,
-#root {
+body {
     width: 100%;
     min-height: 100vh;
     overflow-x: hidden;
@@ -8,9 +7,4 @@ body,
 * {
     box-sizing: border-box !important;
     scroll-behavior: smooth !important;
-}
-
-#root {
-    max-width: 1440px;
-    margin-inline: auto;
 }
