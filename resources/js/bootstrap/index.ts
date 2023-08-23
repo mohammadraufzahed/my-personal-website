@@ -1,1 +1,2 @@
+import "./static";
 import "./alpine";
