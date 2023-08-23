@@ -10,4 +10,5 @@
         </span>
         <div class="absolute w-full h-full top-0 left-0 bg-hero bg-cover bg-no-repeat opacity-40 z-0"></div>
     </div>
+    <x-skills />
 </x-layouts.app>
