@@ -1,4 +1,4 @@
-<nav x-data='{ open: true }' class='relative w-full h-max flex flex-row items-center justify-between'>
+<nav x-data='{ open: false }' class='relative w-full h-max flex flex-row items-center justify-between'>
     <div class="w-max flex items-center justify-center gap-11">
         <a href="/" class="w-max text-3xl md:text-4xl lg:text-5xl font-black">
             م
