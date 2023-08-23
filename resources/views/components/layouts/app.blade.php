@@ -13,6 +13,7 @@
     <div class="w-full h-max flex flex-col justify-between gap-11 max-w-[1400px] mx-auto">
         <x-navbar />
         {{ $slot }}
+        <x-footer />
     </div>
     @vite('./resources/js/app.ts')
 </body>
