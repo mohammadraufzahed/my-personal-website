@@ -12,4 +12,5 @@
     </div>
     <x-skills />
     <x-services />
+    <x-portfolio />
 </x-layouts.app>
