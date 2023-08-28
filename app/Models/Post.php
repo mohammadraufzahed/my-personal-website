@@ -23,11 +23,8 @@ class Post extends Model
         'updated_at' => 'datetime'
     ];
 
-    public function user(): BelongsTo {
+    public function user(): BelongsTo
+    {
         return $this->belongsTo(User::class);
-    }
-
-    public function tags(): HasMany {
-        return $this->hasMany(Tag::class);
     }
 }
